@@ -220,7 +220,7 @@ The optional account endpoints (`/api/auth/*`, `/api/plan`, `/api/saved-pathways
 
 ---
 
-Option 1: Run on Replit (recommended)
+### Option 1: Run on Replit (recommended)
 
 1. Import this repository into Replit (**Create Repl → Import from GitHub**).
 2. For the preliminary demo, leave Gemini credentials unset. `model_configured: false` is expected. The optional AI controls can return an unavailable message or standard fallback; they are not evidence of a live model call.
