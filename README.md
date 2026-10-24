@@ -22,8 +22,8 @@
 | Resource          | Link                                                                                                     |
 | ----------------- | -------------------------------------------------------------------------------------------------------- |
 | GitHub Repository | https://github.com/MinHueyChan/BridgeNext                                                                |
-| Live Demo         | https://bridge-next.replit.app/ (first load can take a few seconds while the Replit deployment wakes up) |
-| RunPod Endpoint   | Not used (no GPU workload). See [How We Use RunPod](#how-we-use-runpod-required)                         |
+| Live Demo         | https://Bridge-Next.replit.app |
+| RunPod Endpoint   | Not used (no GPU workload)                       |
 | Slide Deck        | TODO                                                                                                     |
 | Demo Video        | TODO (YouTube)                                                                                           |
 
