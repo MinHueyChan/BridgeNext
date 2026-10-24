@@ -2675,5 +2675,189 @@ export const dictionary:Record<string,[string,string]>={
  "Data sources & updates": [
   "Sumber data dan kemas kini",
   "数据来源与更新"
+ ],
+ "Start here": [
+  "Mula di sini",
+  "从这里开始"
+ ],
+ "Explore directions": [
+  "Terokai hala tuju",
+  "探索职业方向"
+ ],
+ "Build a plan": [
+  "Bina pelan",
+  "制定学习计划"
+ ],
+ "Choose a group to explore your ratings.": [
+  "Pilih kumpulan untuk meneroka penilaian anda.",
+  "点选技能分组，查看你的自评。"
+ ],
+ "Skills you rated in this group": [
+  "Kemahiran yang anda nilai dalam kumpulan ini",
+  "你在这个分组中评过的技能"
+ ],
+ "No skills rated in this group yet.": [
+  "Belum ada kemahiran yang dinilai dalam kumpulan ini.",
+  "你尚未评估这个分组中的技能。"
+ ],
+ "FROM YOUR SELF-RATINGS": [
+  "DARIPADA PENILAIAN KENDIRI ANDA",
+  "根据你的技能自评"
+ ],
+ "Your strengths": [
+  "Kekuatan anda",
+  "已有优势"
+ ],
+ "Relevant skills you rated 4–5 out of 5. Self-reported, not a certification.": [
+  "Kemahiran relevan yang anda nilai 4–5 daripada 5. Penilaian kendiri, bukan pensijilan.",
+  "与你当前输入相关、自评为 4–5 分的技能。属于个人自评，并非认证。"
+ ],
+ "Your ratings give us a starting point. Skills rated 4–5 will appear here.": [
+  "Penilaian anda memberi titik permulaan. Kemahiran yang dinilai 4–5 akan dipaparkan di sini.",
+  "你的自评是分析的起点，评为 4–5 分的相关技能会显示在这里。"
+ ],
+ "Skills to strengthen": [
+  "Kemahiran untuk diperkukuh",
+  "值得加强的技能"
+ ],
+ "No additional priorities from the skills you rated. Add tasks or more self-ratings for a fuller picture.": [
+  "Tiada keutamaan tambahan daripada kemahiran yang anda nilai. Tambah tugas atau penilaian untuk gambaran yang lebih lengkap.",
+  "就你已评估的技能，暂时没有新增提升项。补充工作任务或更多自评，可让建议更具体。"
+ ],
+ "Not yet assessed": [
+  "Belum dinilai",
+  "尚未评估"
+ ],
+ "These relevant skills need a self-rating. They are not confirmed weaknesses.": [
+  "Kemahiran relevan ini memerlukan penilaian kendiri. Ia bukan kelemahan yang disahkan.",
+  "这些相关技能还需要补充自评，不代表你缺乏这些能力。"
+ ],
+ "Review my ratings": [
+  "Semak penilaian saya",
+  "查看并调整我的自评"
+ ],
+ "Priorities combine task relevance, self-rated gaps and the selected learning view. These are model suggestions, not measured future demand.": [
+  "Keutamaan menggabungkan kaitan tugas, jurang penilaian kendiri dan pandangan pembelajaran pilihan. Ini cadangan model, bukan ukuran permintaan masa depan.",
+  "优先级结合任务相关性、自评提升空间和所选学习视角计算，是模型建议，并非测得的未来需求。"
+ ],
+ "AI-led means asking AI to carry out a task, sometimes with human feedback. Working together means learning, refining or reviewing work with AI.": [
+  "Diterajui AI bermaksud meminta AI melaksanakan tugas, kadangkala dengan maklum balas manusia. Bekerjasama bermaksud belajar, memperhalus atau menyemak kerja bersama AI.",
+  "AI 执行：请 AI 完成任务，过程中也可能有人提供反馈。人机协作：借助 AI 学习、改进或检查工作。"
+ ],
+ "Task comparison": [
+  "Perbandingan tugas",
+  "工作任务对比"
+ ],
+ "Compare the ways people used AI": [
+  "Bandingkan cara orang menggunakan AI",
+  "比较不同任务中的 AI 用法"
+ ],
+ "View task source": [
+  "Lihat sumber tugas",
+  "查看任务来源"
+ ],
+ "Source": [
+  "Sumber",
+  "来源"
+ ],
+ "Related skills": [
+  "Kemahiran berkaitan",
+  "相关技能"
+ ],
+ "The two colours show conversation patterns, not AI capability, accuracy or job replacement.": [
+  "Dua warna menunjukkan corak perbualan, bukan kebolehan AI, ketepatan atau penggantian pekerjaan.",
+  "两种颜色代表对话使用模式，不能表示 AI 能力、准确率或岗位取代率。"
+ ],
+ "The two colours show conversation patterns, not AI capability, accuracy or job replacement. Related skills follow our curated task-to-skill mapping.": [
+  "Dua warna menunjukkan corak perbualan, bukan kebolehan AI, ketepatan atau penggantian pekerjaan. Kemahiran berkaitan menggunakan pemetaan tugas kepada kemahiran yang kami susun.",
+  "两种颜色代表对话使用模式，不能表示 AI 能力、准确率或岗位取代率。相关技能来自项目整理的任务与技能对应关系。"
+ ],
+ "Use Gemini for this description": [
+  "Gunakan Gemini untuk penerangan ini",
+  "使用 Gemini 分析这段描述"
+ ],
+ "If selected, only this description is sent to Gemini. Avoid names or contact details. Review suggestions before adding them.": [
+  "Jika dipilih, hanya penerangan ini dihantar kepada Gemini. Elakkan nama atau butiran hubungan. Semak cadangan sebelum menambahnya.",
+  "选中后，仅这段描述会发送给 Gemini。请勿填写姓名或联系方式，添加前请检查建议。"
+ ],
+ "AI suggestions require the connected backend. Catalogue keyword matching is available.": [
+  "Cadangan AI memerlukan pelayan yang disambungkan. Padanan kata kunci katalog masih tersedia.",
+  "AI 建议需要连接后端；仍可使用目录关键词匹配。"
+ ],
+ "No supported skills found. Your note is not included in matching.": [
+  "Tiada kemahiran yang disokong ditemui. Nota anda tidak digunakan dalam padanan.",
+  "未找到目录支持的技能。这段备注不会参与匹配。"
+ ],
+ "Gemini is not configured for this server.": [
+  "Gemini belum dikonfigurasi untuk pelayan ini.",
+  "此服务器尚未配置 Gemini。"
+ ],
+ "The Gemini connection needs attention.": [
+  "Sambungan Gemini perlu diperiksa.",
+  "Gemini 连接配置需要检查。"
+ ],
+ "Gemini access could not be authorised.": [
+  "Akses Gemini tidak dapat disahkan.",
+  "无法获得 Gemini 访问授权。"
+ ],
+ "Gemini is busy. Please try again later.": [
+  "Gemini sedang sibuk. Cuba lagi kemudian.",
+  "Gemini 暂时繁忙，请稍后重试。"
+ ],
+ "Gemini took too long to respond.": [
+  "Gemini mengambil masa terlalu lama untuk membalas.",
+  "Gemini 响应超时。"
+ ],
+ "The AI response did not pass our checks.": [
+  "Respons AI tidak lulus semakan kami.",
+  "AI 回应未通过检查。"
+ ],
+ "Gemini is temporarily unavailable.": [
+  "Gemini tidak tersedia buat sementara waktu.",
+  "Gemini 暂时无法使用。"
+ ],
+ "Understand this recommendation": [
+  "Fahami cadangan ini",
+  "了解这项建议"
+ ],
+ "Gemini can explain the calculated results. Only skill ratings, interests, selected tasks and learning settings are shared; your name and CV are excluded.": [
+  "Gemini boleh menerangkan hasil pengiraan. Hanya penilaian kemahiran, minat, tugas pilihan dan tetapan pembelajaran dikongsi; nama dan CV anda tidak dihantar.",
+  "Gemini 可以说明已计算的结果。仅分享技能自评、兴趣、所选任务和学习设置，不包含姓名或 CV。"
+ ],
+ "Preparing explanation…": [
+  "Menyediakan penerangan…",
+  "正在准备说明…"
+ ],
+ "Ask Gemini again": [
+  "Minta Gemini sekali lagi",
+  "再次询问 Gemini"
+ ],
+ "Ask Gemini to explain": [
+  "Minta penerangan Gemini",
+  "请 Gemini 解释"
+ ],
+ "AI explanations require the connected backend. The scores, priorities and learning steps shown here remain available.": [
+  "Penerangan AI memerlukan pelayan yang disambungkan. Skor, keutamaan dan langkah pembelajaran masih tersedia.",
+  "AI 解释需要连接后端。页面中的分数、优先技能及学习步骤仍可使用。"
+ ],
+ "AI explanation · Gemini": [
+  "Penerangan AI · Gemini",
+  "AI 解释 · Gemini"
+ ],
+ "Standard explanation": [
+  "Penerangan standard",
+  "标准说明"
+ ],
+ "The existing scores, priorities and learning steps are the standard explanation. You can continue planning.": [
+  "Skor, keutamaan dan langkah pembelajaran sedia ada ialah penerangan standard. Anda boleh terus merancang.",
+  "现有分数、优先技能和学习步骤提供了标准说明，你可以继续规划。"
+ ],
+ "AI wording can be imperfect. Check it against the scores and sources. It does not change your profile or recommendations.": [
+  "Penerangan AI mungkin kurang tepat. Semak dengan skor dan sumber. Ia tidak mengubah profil atau cadangan anda.",
+  "AI 的表述可能有误，请对照分数和来源查看。它不会改变你的资料或推荐结果。"
+ ],
+ "This is standard guidance, not a generated AI response.": [
+  "Ini panduan standard, bukan respons yang dijana AI.",
+  "这是标准指导，不是 AI 生成的回应。"
  ]
 };

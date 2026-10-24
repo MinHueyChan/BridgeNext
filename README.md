@@ -2,13 +2,21 @@
 
 A guest-first career planning application for working adults. The first catalogue focuses on Malaysian financial operations and related administrative work. This revision adds a chick-led four-step questionnaire, CV import, career comparisons, a future skills radar, time-budgeted pathways, and a focused personal planning journey.
 
+## Primary working folder
+
+The current primary project is `C:\Users\cminh\Downloads\BridgeNext`, merged with the latest interface and optional Gemini work on 24 October 2026. Open this folder in VS Code for future changes. The older working copy under `Downloads/BridgeNext-Replit/BridgeNext-Replit` is retained separately and is no longer the primary project.
+
+Local full-app preview uses http://localhost:5000. To rebuild it in PowerShell, run `$env:VITE_BACKEND_ENABLED='true'; npm.cmd run build`, then start `.\.venv\Scripts\python.exe -m backend.main`. Restart that process after backend changes; rebuild after frontend changes. `npm run dev` is a separate Vite preview and defaults to port 5173.
+
+The destination's Git history, favicon, Replit configuration, dependency files, hooks, credentials and runtime database were preserved. Legacy public catalogue/duplicate preview files remain in this destination repository for continuity; runtime code uses the canonical `data/catalogue.json`. Earlier cleanup notes describe the former working copy.
+
 ## Try it
 
 1. Home → **Find my next direction**. Choose a current occupation, experience and weekly study time.
 2. Add Tools / Work tasks / Skills by clicking or dragging. Task selections suggest catalogue skills; users review and rate them. Unknown descriptions are retained as notes and excluded from matching.
 3. Rate every selected skill on the anchored 1–5 confidence scale. Select interests, review and confirm the profile to see its highest-matching direction.
 4. The top-direction overview shows one highest match, strengths and learning priorities. Choose **View learning pathway** to start that direction, or **Explore more** to compare all five directions, score explanations, sources and SDG contributions. Two directions can be compared side by side.
-5. In **Future skills radar**, start with a short current-work learning suggestion, then use **Changes at work**, **Skills to build** or **Career outlook**. Task cards explain AI usage patterns in words; raw percentages and sources expand on demand. Skills to build supports both current-work and future-career plans. The five-group self-rating chart is visible near the top. Model comparisons remain optional; source updates and month-to-month matching checks are available through **Evidence & sources**.
+5. In **Future skills radar**, see **Your strengths**, **Skills to strengthen** and the five-group chart, then use **Changes at work**, **Skills to build** or **Career outlook**. A shared horizontal chart directly compares sampled AI-led and working-together conversation percentages; each task retains its related skills and source action. Skills to build supports both current-work and future-career plans. The five-group self-rating chart is visible near the top. Model comparisons remain optional; source updates and month-to-month matching checks are available through **Evidence & sources**.
 6. In **Learning pathway**, switch between **Grow in my current role** and **Prepare for a new role**. The current-role mode contains an expandable task/trend/skill-priority review; there is no separate current-role page. Change weekly hours, open provider resources, mark personal progress, save in the test prototype session, or export Markdown. Guest Save opens a login prompt; clicking **Log in** opens test with the current answers and completes that pending save. The notification links to **View saved pathways**.
 
 The ready-made Mei/Aaron demo picker and workspace switcher have been removed. **Log in** now immediately opens an explicitly labelled **test prototype workspace**, using the user's current occupation, experience, skills, confidence, interests, weekly hours and personal chick. No email/password or backend login is performed. This is presentation access stored in sessionStorage, not real authentication or cloud persistence. Guest My Profile, Saved Pathways and My Achievements share the prompt; logging in opens the requested page. Closing it keeps the current page, answers and temporary progress. Login during the questionnaire or CV draft preserves those inputs and their unconfirmed status.
@@ -28,7 +36,9 @@ The Data saver toggle and alternate low-data mode have been removed. The skill c
 
 ## Reading the simplified Future Skills Radar
 
-The page starts with up to three current-work learning suggestions alongside a visible five-group skill chart (stacked on mobile). The chart uses a self-assessed 1-5 scale, shows assessed points for partial profiles, and draws a filled shape only when all five groups are rated. Individual ratings remain available in a details section. The default **Changes at work** view uses selected tasks and self-ratings. With no selected tasks, it explicitly uses rated skills for suggestions and labels the task cards as catalogue examples, never inferring duties from an occupation title. Task cards describe whether AI-led or collaborative interaction patterns are more common in the chosen sample. **What does the data say?** reveals the original automation/augmentation percentages, month and source observation. These describe sampled Claude use, not AI capability, accuracy, job replacement or Malaysian adoption.
+The page starts with two content-sized personal insight cards alongside the visible five-group skill chart (stacked on smaller screens). **Your strengths** lists up to three current-work-relevant skills rated 4-5/5. **Skills to strengthen** lists up to three assessed skills below 4/5, in the existing current-role model's priority order. These are self-reported ratings and model suggestions, not certified strengths or measured weaknesses. Relevant unrated skills appear separately under **Not yet assessed**, with a profile-review action. Unconfirmed CV zero placeholders are also treated as unassessed in this display. **Grow in my current role** opens the existing current-role learning pathway using actual profile inputs and catalogue resources.
+
+The chart uses a self-assessed 1-5 scale, shows assessed points for partial profiles, and draws a filled shape only when all five groups are rated. Individual ratings remain available in a details section. The default **Changes at work** view displays selected tasks in one comparison chart: two-colour horizontal bars, visible original automation/augmentation percentages, related skill chips and a **Source** action for each task. Missing observations are explicitly unavailable, never zero. With no selected tasks, the chart labels rows as catalogue examples, never inferring duties from an occupation title; personal priorities use the existing rated-skill fallback. AI-led includes asking AI to execute work, sometimes with human feedback; working together includes learning, refining and reviewing work. These describe sampled Claude conversation patterns, not AI capability, accuracy, job replacement or Malaysian adoption. Task-to-skill links remain curated model mappings.
 
 **Skills to build** presents up to three learning priorities with self-ratings or an explicit not-rated label. Choose current-role growth or a future career, then **Build my learning plan** opens that exact goal and clears any previously opened saved snapshot. The optional **What if AI takes on more routine work?** section compares **Today’s work** (existing moderate scenario) and **More AI-led work** (existing fast scenario). Both remain model assumptions with the original weights; shared-priority claims still require sufficient evidence. There is no new demand forecast or scoring formula.
 
@@ -54,6 +64,20 @@ For a presentation: complete the questionnaire -> view a suggested/current-role 
 
 Optional connected browser check: build with `VITE_BACKEND_ENABLED=true`, run `python tests/serve_test_backend.py` in a separate terminal, then run `node tests/check_account_achievements_ui.mjs`. The harness serves on localhost:8011 and uses an independent temporary database. It creates a real synthetic backend account via API, then verifies that the browser's test workspace does not call private account APIs or write that account's plan/library/achievements despite its cookie. It also checks local reload, exit/re-entry and protected endpoints after server logout. Stop the harness when finished. This is local verification, not deployed account continuity.
 
+## Card colours and interaction
+
+The cream background, forest-green primary actions and current chick artwork remain. Coordinated sage, honey, sky, lavender, mint and peach surfaces distinguish the home steps, career directions, task cards, interests, pathway steps and saved collections. Colours are decorative categories, not additional match scores or risk levels.
+
+The three home cards are static explanations of the journey. They retain their pastel surfaces and entry effects, with no footer links, arrows or click/hover navigation cues. The main journey actions and unfinished-draft continuation remain available elsewhere on Home. The five-group skill chart has keyboard- and touch-accessible group buttons that reveal actual individual self-ratings or an explicit not-rated state. Exploring a group does not edit the profile or invent a score.
+
+Small hover, press, selection, page/tab entry, chip and progress transitions provide feedback. Home panels reveal as they enter view when IntersectionObserver is available; essential content remains visible without observation support or with reduced motion. A brief decorative celebration appears only after explicit pathway completion/reflection/attestation. All added movement respects `prefers-reduced-motion`; core actions never depend on hover. The effects use CSS/browser APIs, with no animation dependency or service added.
+
+## Source layout and cleanup
+
+`data/catalogue.json` is the canonical packaged catalogue. React imports it directly and FastAPI serves `/api/catalogue`; the obsolete `public/catalogue.json` copy has been removed. The catalogue-building utility now writes only the canonical file and was not run during cleanup. Original raw evidence, notices, all runtime code and Replit configuration remain.
+
+`public/previews/BridgeNext-mascot-v2.jpg` retains the visual reference. An identical second preview was removed. Local `.test-tools/*.png` screenshots, project Python bytecode and TypeScript incremental cache were cleared; tools may regenerate them normally. Dependencies and the isolated Python/Playwright environments were retained for local running and tests. Source packaging now prunes `.test-tools`, dependencies, generated builds and runtime caches, so local check artifacts do not enter the Replit source archive.
+
 ## Stack and running
 
 React, TypeScript, Vite, Recharts and Lucide React frontend; Python FastAPI, Pydantic, Uvicorn, SQLite and Google GenAI backend. Exact JavaScript versions are in package-lock.json; Python versions are in requirements.txt. Use Node 24 and Python 3.12.
@@ -62,15 +86,31 @@ React, TypeScript, Vite, Recharts and Lucide React frontend; Python FastAPI, Pyd
 bash scripts/run-replit.sh
 ```
 
-The included .replit starts the same command. It builds with `VITE_BACKEND_ENABLED=true` and serves React and the JSON API from one FastAPI service on port 5000. Python dependencies install into Replit's project package directory using `uv`, avoiding the read-only system Python. For local frontend-only review use `npm ci` and `npm run dev`.
+The included .replit starts the same command. It builds with `VITE_BACKEND_ENABLED=true` and serves React and the JSON API from one FastAPI service on port 5000. The existing Replit workflow, autoscale deployment settings, post-merge hook and uv project-package installation are preserved. For local frontend-only review use `npm ci` and `npm run dev`.
 
 The static frontend runs the same browser matching formulas and packaged data. The current source provides test prototype access and browser-session collections without requiring Python. Replit runs the FastAPI service alongside the frontend when configured. A previously published hosted preview does not automatically receive local changes; this revision has not been deployed.
 
 ## Gemini
 
-The optional adapter uses `gemini-2.5-flash` through Replit AI Integrations. Enable that integration and configure server-side `AI_INTEGRATIONS_GEMINI_API_KEY` and `AI_INTEGRATIONS_GEMINI_BASE_URL` as supplied by Replit. Keep values out of the repository. Verify the workspace's current generated integration example before a live demonstration.
+The optional Gemini connection now supports two on-demand functions. In the skill picker, **Use Gemini for this description** opts in to sending only that description plus the controlled skill catalogue. **Find matches** returns reviewed catalogue skill suggestions; the user must add and rate them. With the checkbox off, matching stays local and uses keywords. A valid empty Gemini result stays empty. Missing configuration, timeout, rejected output or provider failures explicitly identify the keyword fallback rather than labelling it AI output.
 
-The model suggests controlled skill IDs from a short work description; invalid IDs are rejected. Suggestions require user review. Without a model connection the UI labels its catalogue keyword fallback. Current result explanations are deterministic templates. A real Gemini response has not been tested in this environment.
+**Understand this recommendation** is available on the highest-match result and live Learning pathway, for both current-role and future-role goals. Opening the section does not call the model. **Ask Gemini to explain** requests qualitative wording in the selected UI language. FastAPI recomputes the authoritative scores, priorities, resources and schedule before calling Gemini; client-supplied scores are not accepted. The request excludes names, custom occupation text, experience text and CVs. Referenced skills/resources must belong to the computed priorities/pathway. New score fields, unknown IDs and numeric/URL claims in the prose are rejected. Generated wording is labelled and remains subject to human review; structured checks cannot prove every qualitative statement. It never changes scores, profile ratings, course selection, savings or achievements.
+
+Gemini failure returns a labelled **Standard explanation**. Network failures retain the existing visible score/priority/pathway explanation. Responses for an old profile, goal, hours, evidence revision or language are discarded. Saved snapshots retain their original recommendations and do not request a new AI explanation.
+
+### Enable in Replit
+
+1. In the existing Replit project's Agent, request: `Enable Google Gemini via Replit AI Integrations for this existing Python FastAPI app. Preserve the current website and scoring code. Only configure the integration and provide its current Python SDK example.` Approve the **Replit-managed** integration prompt when offered. See [Replit's official AI Integrations instructions](https://docs.replit.com/features/integrations/replit-ai-integrations).
+2. Confirm the backend receives `AI_INTEGRATIONS_GEMINI_API_KEY` and `AI_INTEGRATIONS_GEMINI_BASE_URL` from that integration. Keep credentials server-side; never place them in a VITE_ variable, source file, screenshot or chat. `.env.example` documents names but does not load a local .env automatically.
+3. Run `python scripts/check-gemini.py` in Replit Shell. This checks configuration presence only, does not call a model and never prints credentials or the private endpoint. The default model is `gemini-2.5-flash`; optional server variable `GEMINI_MODEL` selects a compatible available Gemini model. The adapter currently uses the project's Replit proxy convention (`base_url` with an empty SDK API version); compare it with the integration-generated example before live verification.
+4. Run `python scripts/check-gemini.py --live` to make **two billable synthetic requests**: skill extraction and a computed-result explanation. Both must report `gemini`, and extraction must contain a supported skill, for exit code 0. Configuration alone or a fallback response is not proof of a working connection. This script reads the packaged catalogue and does not write the app database.
+5. Build/run with `bash scripts/run-replit.sh`, then exercise both UI actions. Sync and republish the Replit deployment after code/configuration changes. Verify the published app separately; a working Shell check does not prove that deployment secrets and the deployed source are current.
+
+`GET /api/ai/status` exposes non-secret configuration presence only (`configuration_only: true`), never connection verification. `POST /api/profile/extract` and `POST /api/explanations` require explicit consent, enforce controlled inputs and share an in-process per-client limit of 12 requests/minute. The SDK uses one attempt, a 12-second HTTP timeout and a 15-second overall deadline, then falls back. These are prototype limits, not a distributed production quota system. No prompt/response cache or database storage was added; model-provider/host data handling remains governed by their service settings and terms.
+
+For connected local development, start FastAPI on port 5000 and run Vite with `VITE_BACKEND_ENABLED=true`; Vite proxies `/api` to localhost:5000. For frontend-only review the flag remains false and catalogue matching/deterministic explanations continue working.
+
+Local verification on 24 October 2026 covered synthetic provider successes/failures, the real installed SDK over mocked HTTP transport, validation and browser behaviour. **No live Gemini response or Replit deployment has been verified here:** the local environment has no model credentials.
 
 ## CV import
 
@@ -127,13 +167,14 @@ Each role and skill has an SDG target plus a specific intended contribution. The
 ```sh
 npm run build
 python tests/check_backend.py
+python tests/check_gemini.py
 python tests/check_signals.py
 python tests/check_achievements.py
 python tests/check_saved_pathways.py
 node scripts/check-parity.mjs
 ```
 
-Backend validation includes 12 contract/account checks, 7 signal checks, 4 achievement checks and 5 saved-pathway checks (28 total). TypeScript/Python parity covers 9 future-role, 11 current-role and 20 completion-resource cases. Browser checks use real questionnaire inputs rather than prepared identities: test login and page destinations; automatic pending-save continuation; profile edit/cancel and chick consistency; CV draft preservation; saved snapshots/progress and collection reload; badge reflection, attestation and deduplication; guest gates and exit/re-entry; no private browser account API calls; English/Malay/Chinese and mobile layouts. The dedicated radar browser suite also checks real/missing observations, hidden details, keyboard tabs, both planning goals, selected-task scope and visible partial/full five-group charts, assessed-only averages and the centralized evidence dialog. The connected-cookie check above verifies that a real account does not receive prototype saves.
+Backend validation includes 12 contract/account checks, 14 Gemini checks, 7 signal checks, 4 achievement checks and 5 saved-pathway checks (42 total). Gemini tests use synthetic responses and mocked SDK transport, not live model calls. TypeScript/Python parity covers 9 future-role, 11 current-role and 20 completion-resource cases. Browser checks use real questionnaire inputs rather than prepared identities: test login and page destinations; automatic pending-save continuation; profile edit/cancel and chick consistency; CV draft preservation; saved snapshots/progress and collection reload; badge reflection, attestation and deduplication; guest gates and exit/re-entry; no private browser account API calls; English/Malay/Chinese and mobile layouts. The dedicated radar browser suite also checks real/missing observations, direct task comparison, keyboard tabs, both planning goals, selected-task scope and visible partial/full five-group charts, assessed-only averages and the centralized evidence dialog. The personal-insights suite also verifies relevant high/low ratings, unrated-only and fully rated cases, CV zero placeholders, real current-role resources, compact cards and three-language layouts across desktop, tablet and mobile. The connected-cookie check above verifies that a real account does not receive prototype saves.
 
 Optional local browser checks (start `npm run dev` first):
 
@@ -146,6 +187,10 @@ node tests/check_achievements_ui.mjs
 node tests/check_saved_pathways_ui.mjs
 node tests/check_prototype_ui.mjs
 node tests/check_radar_ui.mjs
+node tests/check_presentation_ui.mjs
+node tests/check_insights_ui.mjs
+# Connected build and temporary backend on :8011:
+node tests/check_gemini_ui.mjs
 ```
 
 Set `BRIDGENEXT_URL` to override the default `http://127.0.0.1:5173`. On other systems set `BRIDGENEXT_CHROME` to the browser executable, or install Playwright Chromium. Test screenshots and tools stay in ignored `.test-tools/`. Backend tests also need `httpx` in the Python test environment.

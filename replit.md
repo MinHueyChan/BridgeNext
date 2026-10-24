@@ -1,5 +1,8 @@
 # Running BridgeNext on Replit
 
+Read AGENTS.md and CODEX_HANDOFF.md first. Section 23 records the merge into the
+primary local folder `C:\Users\cminh\Downloads\BridgeNext`.
+
 The project root is the directory containing `package.json`, `backend/`, and
 `scripts/run-replit.sh`.
 
@@ -31,8 +34,11 @@ dependencies with `uv`, but cannot run until that earlier phase succeeds.
 ## Optional AI integration
 
 The questionnaire, matching, career recommendations, and learning pathways work
-without an AI credential. Gemini-powered skill suggestions are optional and are
-not connected by default. To enable them, connect Replit AI Integrations for
+without an AI credential. Gemini-powered skill suggestions and qualitative result explanations are optional
+and are not connected by default. The user explicitly requests them; deterministic
+code still controls scores, skill ratings and learning-resource selection. See
+README.md for configuration and `python scripts/check-gemini.py --live` for the
+two-request synthetic live connection check. Local mocks do not prove real access. To enable them, connect Replit AI Integrations for
 Gemini and configure the server-side Secrets `AI_INTEGRATIONS_GEMINI_API_KEY`
 and `AI_INTEGRATIONS_GEMINI_BASE_URL` with the values provided by that
 integration. Never put these values in frontend variables or source files.

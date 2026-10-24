@@ -34,5 +34,6 @@ resources=[
 mei={'name':'Mei','title':'Accountant','experience':'4 years','hours':4,'interests':['finance','analysis'],'tasks':[t['id'] for t in tasks],'mastery':dict(zip([s['id'] for s in skills],[.9,.85,.9,.75,.8,.85,.8,.8,.1,.15,.8,.35,.4,.6,.05,.45,.35,.6])),'confirmed':True}
 aaron={'name':'Aaron','title':'Administrative assistant','experience':'3 years','hours':6,'interests':['data','analysis'],'tasks':['spreadsheets','reports','records','payments'],'mastery':dict(zip([s['id'] for s in skills],[.8,.75,.4,.75,.7,.7,.6,.5,.65,.6,.7,.4,.6,.35,.1,.65,.2,.6])),'confirmed':True}
 cat={'skills':skills,'tasks':tasks,'roles':roles,'resources':resources,'personas':{'mei':mei,'aaron':aaron},'evidence':{'source_url':source['source_url'],'release':source['release'],'retrieved_at':source['retrieved_at'],'geography':'GLOBAL','kind':'Observed Claude usage','months':['2026-04','2026-05'],'caveat':'These are observed patterns in sampled Claude conversations, not Malaysian adoption rates or job-loss probabilities.','metric':'collaboration_bucket_automation_pct','mapping':'Task-group and skill mappings are prototype design choices, not official crosswalks.'}}
-(ROOT/'public/catalogue.json').write_text(json.dumps(cat,indent=2));(ROOT/'data/catalogue.json').write_text(json.dumps(cat,indent=2))
+# The browser imports data/catalogue.json; FastAPI serves /api/catalogue.
+(ROOT/'data/catalogue.json').write_text(json.dumps(cat,indent=2))
 print('Built catalogue with',len(tasks),'tasks,',len(skills),'skills and real dated task observations.')
