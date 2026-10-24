@@ -23,6 +23,8 @@ An explainable career-planning prototype for working adults adapting to AI-relat
 | RunPod Endpoint   | Not used (no GPU workload)                       |
 | Slide Deck        | https://canva.link/ahcnzn791me9p6m                                                                                                     |
 | Demo Video        | https://www.youtube.com/watch?v=p5X6IO9a-JY&feature=youtu.be                                                                                          |
+|SDC2026_EyeScream_Preliminary|https://github.com/MinHueyChan/BridgeNext/blob/436b888a98b4a31b50e2af80fb191ae18408ed75/submission/SDC2026_EyeScream_Preliminary.pdf |
+|SDC2026_EyeScream_TechDeclaration|https://github.com/MinHueyChan/BridgeNext/blob/436b888a98b4a31b50e2af80fb191ae18408ed75/submission/SDC2026_EyeScream_TechDeclaration.pdf|
 
 ---
 
