@@ -3,7 +3,7 @@ from pathlib import Path
 from zipfile import ZipFile,ZIP_DEFLATED
 import os
 root=Path(__file__).resolve().parents[1]
-excluded={'node_modules','dist','.git','.openai','__pycache__','.venv','.test-tools'}
+excluded={'node_modules','dist','.git','.openai','__pycache__','.venv','.test-tools','.pythonlibs','generated-artifacts'}
 
 def package_source(out):
     out=Path(out).resolve()
