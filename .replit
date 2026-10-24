@@ -1,0 +1,51 @@
+entrypoint = "backend/main.py"
+run = "bash scripts/run-replit.sh"
+modules = ["nodejs-24", "python-3.12"]
+
+[deployment]
+build = ["bash", "-c", "npm ci && uv pip install --target .pythonlibs/lib/python3.12/site-packages -r requirements.txt && VITE_BACKEND_ENABLED=true npm run build"]
+run = ["python", "-m", "backend.main"]
+deploymentTarget = "autoscale"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Start application"
+
+[[workflows.workflow]]
+name = "Start application"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "PORT=5000 bash scripts/run-replit.sh"
+waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[nix]
+channel = "stable-25_05"
+packages = ["cacert", "libxcrypt"]
+
+
+[userenv]
+
+[userenv.shared]
+PIP_TARGET = ".pythonlibs/lib/python3.12/site-packages"
+PIP_USER = "false"
+
+[postMerge]
+path = "scripts/post-merge.sh"
+timeoutMs = 180000

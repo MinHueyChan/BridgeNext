@@ -1,0 +1,657 @@
+{
+  "skills": [
+    {
+      "id": "excel",
+      "name": "Spreadsheet analysis",
+      "group": "Data",
+      "description": "Build reliable calculations and summaries.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops spreadsheet analysis as an employment-relevant vocational capability."
+    },
+    {
+      "id": "data_validation",
+      "name": "Data validation",
+      "group": "Quality",
+      "description": "Check completeness and spot inconsistent records.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops data validation as an employment-relevant vocational capability."
+    },
+    {
+      "id": "reconciliation",
+      "name": "Reconciliation",
+      "group": "Finance",
+      "description": "Resolve differences between financial records.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops reconciliation as an employment-relevant vocational capability."
+    },
+    {
+      "id": "reporting",
+      "name": "Financial reporting",
+      "group": "Finance",
+      "description": "Turn records into useful reporting.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops financial reporting as an employment-relevant vocational capability."
+    },
+    {
+      "id": "stakeholder",
+      "name": "Stakeholder communication",
+      "group": "People",
+      "description": "Clarify needs and explain findings.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops stakeholder communication as an employment-relevant vocational capability."
+    },
+    {
+      "id": "recordkeeping",
+      "name": "Record management",
+      "group": "Quality",
+      "description": "Maintain traceable supporting records.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops record management as an employment-relevant vocational capability."
+    },
+    {
+      "id": "exception_handling",
+      "name": "Exception handling",
+      "group": "Quality",
+      "description": "Investigate unusual transactions.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops exception handling as an employment-relevant vocational capability."
+    },
+    {
+      "id": "payment_followup",
+      "name": "Payment follow-up",
+      "group": "People",
+      "description": "Coordinate timely resolution of payments.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops payment follow-up as an employment-relevant vocational capability."
+    },
+    {
+      "id": "sql",
+      "name": "SQL foundations",
+      "group": "Data",
+      "description": "Query structured data.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops sql foundations as an employment-relevant vocational capability."
+    },
+    {
+      "id": "powerbi",
+      "name": "Power BI",
+      "group": "Data",
+      "description": "Build clear interactive reports.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops power bi as an employment-relevant vocational capability."
+    },
+    {
+      "id": "critical_thinking",
+      "name": "Critical thinking",
+      "group": "Judgement",
+      "description": "Assess evidence before making a decision.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops critical thinking as an employment-relevant vocational capability."
+    },
+    {
+      "id": "ai_verification",
+      "name": "AI output verification",
+      "group": "Judgement",
+      "description": "Check generated results against source records.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops ai output verification as an employment-relevant vocational capability."
+    },
+    {
+      "id": "process_mapping",
+      "name": "Process mapping",
+      "group": "Judgement",
+      "description": "Understand how work moves between people and tools.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops process mapping as an employment-relevant vocational capability."
+    },
+    {
+      "id": "risk_controls",
+      "name": "Risk and internal controls",
+      "group": "Judgement",
+      "description": "Recognise issues and apply review controls.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops risk and internal controls as an employment-relevant vocational capability."
+    },
+    {
+      "id": "esg_basics",
+      "name": "Sustainability reporting",
+      "group": "Sustainability",
+      "description": "Understand sustainability disclosure concepts.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops sustainability reporting as an employment-relevant vocational capability."
+    },
+    {
+      "id": "data_storytelling",
+      "name": "Data storytelling",
+      "group": "People",
+      "description": "Explain what a result means.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops data storytelling as an employment-relevant vocational capability."
+    },
+    {
+      "id": "payroll_rules",
+      "name": "Payroll operations",
+      "group": "Finance",
+      "description": "Understand payroll checks and records.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops payroll operations as an employment-relevant vocational capability."
+    },
+    {
+      "id": "privacy",
+      "name": "Responsible data handling",
+      "group": "Quality",
+      "description": "Handle data with appropriate care.",
+      "sdg": "4.4",
+      "sdg_reason": "Develops responsible data handling as an employment-relevant vocational capability."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "invoices",
+      "name": "Check invoices",
+      "description": "Receipt and invoice checks",
+      "skills": [
+        "data_validation",
+        "recordkeeping",
+        "exception_handling"
+      ],
+      "node_id": "2509",
+      "source_task": "Match order forms with invoices, and record the necessary information.",
+      "observations": {
+        "2026-04": {
+          "automation": null,
+          "augmentation": null,
+          "usage": null
+        },
+        "2026-05": {
+          "automation": 80.0,
+          "augmentation": 20.0,
+          "usage": 0.0
+        }
+      },
+      "mapping_note": "Prototype mapping reviewed for this task group; not an official crosswalk."
+    },
+    {
+      "id": "reconcile",
+      "name": "Check reconciliations",
+      "description": "Transaction checks and differences",
+      "skills": [
+        "reconciliation",
+        "data_validation",
+        "risk_controls"
+      ],
+      "node_id": "4667",
+      "source_task": "Verify accuracy of reports, such as authorization forms, transaction reconciliations, or exchange summary reports.",
+      "observations": {
+        "2026-04": {
+          "automation": 53.62,
+          "augmentation": 46.38,
+          "usage": 0.0
+        },
+        "2026-05": {
+          "automation": 59.83,
+          "augmentation": 40.17,
+          "usage": 0.0
+        }
+      },
+      "mapping_note": "Prototype mapping reviewed for this task group; not an official crosswalk."
+    },
+    {
+      "id": "spreadsheets",
+      "name": "Analyse spreadsheets",
+      "description": "Calculations and financial summaries",
+      "skills": [
+        "excel",
+        "critical_thinking",
+        "ai_verification"
+      ],
+      "node_id": "15735",
+      "source_task": "Calculate revenue, sales, and expenses, using financial accounting or spreadsheet software.",
+      "observations": {
+        "2026-04": {
+          "automation": 43.87,
+          "augmentation": 56.13,
+          "usage": 0.01
+        },
+        "2026-05": {
+          "automation": 36.16,
+          "augmentation": 63.84,
+          "usage": 0.01
+        }
+      },
+      "mapping_note": "Prototype mapping reviewed for this task group; not an official crosswalk."
+    },
+    {
+      "id": "reports",
+      "name": "Prepare reports",
+      "description": "Reporting and review",
+      "skills": [
+        "reporting",
+        "powerbi",
+        "data_storytelling",
+        "ai_verification"
+      ],
+      "node_id": "21320",
+      "source_task": "Prepare financial or regulatory reports required by laws, regulations, or boards of directors.",
+      "observations": {
+        "2026-04": {
+          "automation": 55.88,
+          "augmentation": 44.12,
+          "usage": 0.0
+        },
+        "2026-05": {
+          "automation": 63.04,
+          "augmentation": 36.96,
+          "usage": 0.0
+        }
+      },
+      "mapping_note": "Prototype mapping reviewed for this task group; not an official crosswalk."
+    },
+    {
+      "id": "records",
+      "name": "Maintain records",
+      "description": "Supporting documents and records",
+      "skills": [
+        "recordkeeping",
+        "privacy",
+        "process_mapping"
+      ],
+      "node_id": "23246",
+      "source_task": "Keep records of invoices and support documents.",
+      "observations": {
+        "2026-04": {
+          "automation": 80.49,
+          "augmentation": 19.51,
+          "usage": 0.0
+        },
+        "2026-05": {
+          "automation": 76.71,
+          "augmentation": 23.29,
+          "usage": 0.0
+        }
+      },
+      "mapping_note": "Prototype mapping reviewed for this task group; not an official crosswalk."
+    },
+    {
+      "id": "payments",
+      "name": "Follow up with people",
+      "description": "Questions, payments and follow-up",
+      "skills": [
+        "stakeholder",
+        "payment_followup",
+        "exception_handling"
+      ],
+      "node_id": "18933",
+      "source_task": "Advise clients or respond to inquiries about financial matters in person or via phone, email, Web site, or Internet chat.",
+      "observations": {
+        "2026-04": {
+          "automation": 35.68,
+          "augmentation": 64.32,
+          "usage": 1.26
+        },
+        "2026-05": {
+          "automation": 34.88,
+          "augmentation": 65.12,
+          "usage": 1.37
+        }
+      },
+      "mapping_note": "Prototype mapping reviewed for this task group; not an official crosswalk."
+    }
+  ],
+  "roles": [
+    {
+      "id": "financial",
+      "name": "Financial analyst",
+      "subtitle": "Turn financial experience into clearer business decisions.",
+      "code": "13-2051.00",
+      "family": "Finance",
+      "icon": "chart",
+      "sdg": [
+        "4.4",
+        "8.2"
+      ],
+      "sdg_reason": "Builds analysis skills and supports effective use of financial technology.",
+      "interests": [
+        "finance",
+        "analysis"
+      ],
+      "qualification": "Professional roles may require a relevant degree or additional finance credentials. Check local employer requirements.",
+      "weights": {
+        "excel": 0.17,
+        "data_validation": 0.14,
+        "reconciliation": 0.12,
+        "reporting": 0.17,
+        "critical_thinking": 0.15,
+        "ai_verification": 0.1,
+        "stakeholder": 0.08,
+        "data_storytelling": 0.07
+      },
+      "source": "https://www.onetonline.org/link/summary/13-2051.00"
+    },
+    {
+      "id": "bi",
+      "name": "Business intelligence analyst",
+      "subtitle": "Make data understandable, useful and actionable.",
+      "code": "15-2051.01",
+      "family": "Data",
+      "icon": "database",
+      "sdg": [
+        "4.4",
+        "8.2"
+      ],
+      "sdg_reason": "Develops digital reporting skills that help organisations use information productively.",
+      "interests": [
+        "data",
+        "analysis"
+      ],
+      "qualification": "SQL, visualisation and analytical project experience are common entry expectations.",
+      "weights": {
+        "excel": 0.12,
+        "data_validation": 0.12,
+        "sql": 0.18,
+        "powerbi": 0.18,
+        "critical_thinking": 0.12,
+        "data_storytelling": 0.14,
+        "ai_verification": 0.09,
+        "reporting": 0.05
+      },
+      "source": "https://www.onetonline.org/link/summary/15-2051.01"
+    },
+    {
+      "id": "compliance",
+      "name": "Compliance officer",
+      "subtitle": "Bring your attention to detail into risk and compliance.",
+      "code": "13-1041.00",
+      "family": "Operations",
+      "icon": "shield",
+      "sdg": [
+        "4.4",
+        "8.2"
+      ],
+      "sdg_reason": "Develops review and control capabilities for responsible use of technology.",
+      "interests": [
+        "people",
+        "finance"
+      ],
+      "qualification": "Sector-specific regulatory knowledge or professional qualifications may be needed.",
+      "weights": {
+        "risk_controls": 0.22,
+        "data_validation": 0.16,
+        "recordkeeping": 0.12,
+        "critical_thinking": 0.16,
+        "stakeholder": 0.13,
+        "exception_handling": 0.12,
+        "privacy": 0.09
+      },
+      "source": "https://www.onetonline.org/link/summary/13-1041.00"
+    },
+    {
+      "id": "sustainability",
+      "name": "Sustainability specialist",
+      "subtitle": "Connect reporting strengths with sustainability information.",
+      "code": "13-1199.05",
+      "family": "Sustainability",
+      "icon": "leaf",
+      "sdg": [
+        "4.4",
+        "12.6"
+      ],
+      "sdg_reason": "Sustainability information and disclosure skills can support company sustainability reporting under target 12.6.",
+      "interests": [
+        "sustainability",
+        "analysis"
+      ],
+      "qualification": "This direction needs additional sustainability knowledge; it is not an immediate qualification for ESG assurance.",
+      "weights": {
+        "esg_basics": 0.23,
+        "reporting": 0.16,
+        "data_validation": 0.15,
+        "stakeholder": 0.12,
+        "data_storytelling": 0.12,
+        "critical_thinking": 0.12,
+        "excel": 0.1
+      },
+      "source": "https://www.onetonline.org/link/summary/13-1199.05"
+    },
+    {
+      "id": "payroll",
+      "name": "Payroll specialist",
+      "subtitle": "Build on accurate records, checks and employee support.",
+      "code": "43-3051.00",
+      "family": "Finance",
+      "icon": "wallet",
+      "sdg": [
+        "4.4",
+        "8.2"
+      ],
+      "sdg_reason": "Strengthens accurate payroll operations alongside changing workplace technology.",
+      "interests": [
+        "finance",
+        "people"
+      ],
+      "qualification": "Local payroll, tax and employment requirements need specific training.",
+      "weights": {
+        "payroll_rules": 0.2,
+        "excel": 0.14,
+        "data_validation": 0.16,
+        "reconciliation": 0.14,
+        "recordkeeping": 0.12,
+        "privacy": 0.12,
+        "stakeholder": 0.12
+      },
+      "source": "https://www.onetonline.org/link/summary/43-3051.00"
+    }
+  ],
+  "resources": [
+    {
+      "id": "powerbi",
+      "name": "Get started building with Power BI",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/get-started-with-power-bi/",
+      "skills": [
+        "powerbi",
+        "data_storytelling",
+        "reporting"
+      ],
+      "hours": 6,
+      "cost": 0,
+      "access": "Free learning content; optional software or certification costs are separate.",
+      "note": "BridgeNext estimate includes practice, not just reading the module."
+    },
+    {
+      "id": "sql",
+      "name": "Introduction to Transact-SQL",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/introduction-to-transact-sql/",
+      "skills": [
+        "sql",
+        "data_validation"
+      ],
+      "hours": 8,
+      "cost": 0,
+      "access": "Free reading; exercises may require a database environment.",
+      "note": "BridgeNext estimate includes a small practice dataset."
+    },
+    {
+      "id": "excel",
+      "name": "Excel help and learning",
+      "provider": "Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/excel",
+      "skills": [
+        "excel",
+        "reconciliation",
+        "reporting"
+      ],
+      "hours": 6,
+      "cost": 0,
+      "access": "Help content is free; Excel software is not included.",
+      "note": "A curated reading and practice activity, not a certificate course."
+    },
+    {
+      "id": "sustainability",
+      "name": "Introduction to IFRS sustainability disclosures",
+      "provider": "IFRS Foundation",
+      "url": "https://www.ifrs.org/sustainability/knowledge-hub/courses/",
+      "skills": [
+        "esg_basics",
+        "reporting"
+      ],
+      "hours": 8,
+      "cost": 0,
+      "access": "Free introductory e-learning with an IFRS.org account; check enrolment details.",
+      "note": "Estimated introductory study and practice time."
+    },
+    {
+      "id": "controls",
+      "name": "Internal control learning materials",
+      "provider": "COSO",
+      "url": "https://www.coso.org/internal-control",
+      "skills": [
+        "risk_controls",
+        "exception_handling",
+        "process_mapping",
+        "privacy"
+      ],
+      "hours": 5,
+      "cost": 0,
+      "access": "Use the public overview only; some publications and courses are paid.",
+      "note": "A guided review of the public overview, not a paid COSO qualification."
+    },
+    {
+      "id": "verification",
+      "name": "Responsible AI learning resources",
+      "provider": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/training/modules/embrace-responsible-ai-principles-practices/",
+      "skills": [
+        "ai_verification",
+        "critical_thinking"
+      ],
+      "hours": 5,
+      "cost": 0,
+      "access": "Free learning content; sign-in is optional for reading.",
+      "note": "Study estimate includes checking a synthetic financial example."
+    },
+    {
+      "id": "communication",
+      "name": "Build a short evidence-based reporting brief",
+      "provider": "BridgeNext practice activity",
+      "url": null,
+      "skills": [
+        "stakeholder",
+        "data_storytelling",
+        "payment_followup"
+      ],
+      "hours": 4,
+      "cost": 0,
+      "access": "Free team-authored practice activity.",
+      "note": "Explain a synthetic reporting discrepancy in a one-page brief; include source checks and the next action."
+    },
+    {
+      "id": "payroll",
+      "name": "Payroll record-checking practice",
+      "provider": "BridgeNext practice activity",
+      "url": null,
+      "skills": [
+        "payroll_rules",
+        "recordkeeping",
+        "privacy"
+      ],
+      "hours": 5,
+      "cost": 0,
+      "access": "Free synthetic activity; not legal or tax training.",
+      "note": "Compare a synthetic payroll register to supporting records; list discrepancies for human review."
+    }
+  ],
+  "personas": {
+    "mei": {
+      "name": "Mei",
+      "title": "Accountant",
+      "experience": "4 years",
+      "hours": 4,
+      "interests": [
+        "finance",
+        "analysis"
+      ],
+      "tasks": [
+        "invoices",
+        "reconcile",
+        "spreadsheets",
+        "reports",
+        "records",
+        "payments"
+      ],
+      "mastery": {
+        "excel": 0.9,
+        "data_validation": 0.85,
+        "reconciliation": 0.9,
+        "reporting": 0.75,
+        "stakeholder": 0.8,
+        "recordkeeping": 0.85,
+        "exception_handling": 0.8,
+        "payment_followup": 0.8,
+        "sql": 0.1,
+        "powerbi": 0.15,
+        "critical_thinking": 0.8,
+        "ai_verification": 0.35,
+        "process_mapping": 0.4,
+        "risk_controls": 0.6,
+        "esg_basics": 0.05,
+        "data_storytelling": 0.45,
+        "payroll_rules": 0.35,
+        "privacy": 0.6
+      },
+      "confirmed": true
+    },
+    "aaron": {
+      "name": "Aaron",
+      "title": "Administrative assistant",
+      "experience": "3 years",
+      "hours": 6,
+      "interests": [
+        "data",
+        "analysis"
+      ],
+      "tasks": [
+        "spreadsheets",
+        "reports",
+        "records",
+        "payments"
+      ],
+      "mastery": {
+        "excel": 0.8,
+        "data_validation": 0.75,
+        "reconciliation": 0.4,
+        "reporting": 0.75,
+        "stakeholder": 0.7,
+        "recordkeeping": 0.7,
+        "exception_handling": 0.6,
+        "payment_followup": 0.5,
+        "sql": 0.65,
+        "powerbi": 0.6,
+        "critical_thinking": 0.7,
+        "ai_verification": 0.4,
+        "process_mapping": 0.6,
+        "risk_controls": 0.35,
+        "esg_basics": 0.1,
+        "data_storytelling": 0.65,
+        "payroll_rules": 0.2,
+        "privacy": 0.6
+      },
+      "confirmed": true
+    }
+  },
+  "evidence": {
+    "source_url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/resolve/main/release_2026_06_26/data/aei_claude_ai_2026-06-26.csv",
+    "release": "2026-06-26",
+    "retrieved_at": "2026-10-22T13:07:01Z",
+    "geography": "GLOBAL",
+    "kind": "Observed Claude usage",
+    "months": [
+      "2026-04",
+      "2026-05"
+    ],
+    "caveat": "These are observed patterns in sampled Claude conversations, not Malaysian adoption rates or job-loss probabilities.",
+    "metric": "collaboration_bucket_automation_pct",
+    "mapping": "Task-group and skill mappings are prototype design choices, not official crosswalks."
+  }
+}

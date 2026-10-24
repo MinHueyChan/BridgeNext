@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.openai/state/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+data/*.sqlite*
+*.tsbuildinfo
+
+.venv/
+.pythonlibs/
+.test-tools/
+generated-artifacts/

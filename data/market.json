@@ -1,0 +1,15 @@
+{
+  "source": "U.S. Bureau of Labor Statistics, Table 1.2",
+  "url": "https://www.bls.gov/emp/tables/occupational-projections-and-characteristics.htm",
+  "released": "2026-08-27",
+  "period": "2025–2035",
+  "geography": "United States",
+  "note": "External occupational projections, not Malaysian forecasts. Context only; excluded from the matching score. Broader occupation groups are identified explicitly.",
+  "rows": [
+    {"role": "financial", "occupation": "Financial and investment analysts", "code": "13-2051", "change": 7.2, "mapping": "Direct SOC occupation reference"},
+    {"role": "compliance", "occupation": "Compliance officers", "code": "13-1041", "change": 3.8, "mapping": "Direct SOC occupation reference"},
+    {"role": "payroll", "occupation": "Payroll and timekeeping clerks", "code": "43-3051", "change": -15.9, "mapping": "Direct SOC occupation reference"},
+    {"role": "bi", "occupation": "Data scientists", "code": "15-2051", "change": 34.6, "mapping": "Broader parent group; not a BI-specific growth estimate"},
+    {"role": "sustainability", "occupation": "Business operations specialists, all other", "code": "13-1199", "change": 3.9, "mapping": "Broader parent group; not a sustainability-specific growth estimate"}
+  ]
+}
