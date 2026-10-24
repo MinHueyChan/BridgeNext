@@ -21,8 +21,8 @@ An explainable career-planning prototype for working adults adapting to AI-relat
 | GitHub Repository | https://github.com/MinHueyChan/BridgeNext                                                                |
 | Live Demo         | https://Bridge-Next.replit.app |
 | RunPod Endpoint   | Not used (no GPU workload)                       |
-| Slide Deck        | TODO                                                                                                     |
-| Demo Video        | TODO (YouTube)                                                                                           |
+| Slide Deck        | https://canva.link/ahcnzn791me9p6m                                                                                                     |
+| Demo Video        | https://www.youtube.com/watch?v=p5X6IO9a-JY&feature=youtu.be                                                                                          |
 
 ---
 
